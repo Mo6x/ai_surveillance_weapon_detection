@@ -1,0 +1,76 @@
+.dashboard {
+  padding: 20px;
+  background-color: #f3f4f8;
+  min-height: 100vh;
+}
+
+.dashboardTitle {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.personImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 16px;
+}
+
+.label {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #333;
+}
+
+/* Status Colors */
+.danger {
+  border-left: 6px solid red;
+}
+
+.safe {
+  border-left: 6px solid blue;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .dashboardTitle {
+    font-size: 1.5rem;
+  }
+
+  .label {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dashboard {
+    padding: 10px;
+  }
+
+  .label {
+    font-size: 0.85rem;
+  }
+}
